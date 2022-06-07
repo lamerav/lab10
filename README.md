@@ -1,4 +1,5 @@
 Laboratory work X
+
 Данная лабораторная работа посвещена изучению процесса создания и конфигурирования виртуальной среды разработки с использованием Vagrant
 $ open https://www.vagrantup.com/intro/index.html
 
@@ -88,9 +89,12 @@ $ vagrant halt
 Эта команда выключает работающую машину, которой управляет Vagrant.
 
 Сначала Vagrant попытается корректно выключить машину, запустив механизм выключения гостевой ОС. Если это не удается или если указан флаг --force, Vagrant фактически просто отключит питание машины.
+	
 $ vagrant snapshot pop
+
 Эта команда обратна vagrant snapshot push: она восстанавливает отправленное состояние.
-  config.vm.provider :vmware_esxi do |esxi|
+	
+config.vm.provider :vmware_esxi do |esxi|
 
     esxi.esxi_hostname = '<exsi_hostname>'
     esxi.esxi_username = 'root'
@@ -105,8 +109,11 @@ $ vagrant snapshot pop
     esxi.guest_numvcpus = '2'
     esxi.guest_disk_type = 'thin'
   end
+	
 $ vagrant plugin install vagrant-vmware-esxi
+	
 Это устанавливает плагин с заданным именем или путем к файлу. Если имя не является путем к файлу, то плагин устанавливается из удаленных репозиториев, обычно RubyGems. Эта команда также обновит плагин, если он уже установлен, но для этого вы также можете использовать бродячее обновление плагина.
+	
 $ vagrant plugin list
 $ vagrant up --provider=vmware_esxi
 
