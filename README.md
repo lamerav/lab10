@@ -1,9 +1,9 @@
-##Laboratory work X
+## Laboratory work X
 
 Данная лабораторная работа посвещена изучению процесса создания и конфигурирования виртуальной среды разработки с использованием Vagrant
 $ open https://www.vagrantup.com/intro/index.html
 
-##Tasks
+## Tasks
 	•	1. Ознакомиться со ссылками учебного материала
 	•	2. Выполнить инструкцию учебного материала
 	•	3. Составить отчет и отправить ссылку личным сообщением в Slack
@@ -139,7 +139,7 @@ $ vagrant plugin install vagrant-vmware-esxi
 $ vagrant plugin list
 $ vagrant up --provider=vmware_esxi
 ```
-##Report
+## Report
 ```sh
 $ cd ~/workspace/
 $ export LAB_NUMBER=10
